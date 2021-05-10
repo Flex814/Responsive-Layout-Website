@@ -13,6 +13,11 @@ body {
     overflow: hidden; /*Ensures scrollbar doesn't appear if things flow off screen.*/
 }
 
+ul {
+    margin: 0; /*Get rid of the preset margin that comes with unordered lists */
+    padding: 0; /*Get rid of the preset padding that comes with unordered lists */
+}
+
 /* Header */
 header{
     background:#35424a ; /*Makes background of header greyish */
@@ -29,13 +34,46 @@ header a{
     font-size: 16px; /* Slightly bigger font */
 }
 
-header ul{
-    margin: 0; /*Get rid of the preset margin that comes with unordered lists */
-    padding: 0; /*Get rid of the preset padding that comes with unordered lists */
-}
-
 header li{
     float: left; /* Makes list items inline from the left */
     display: inline; /* Removes bullet points i think? */
     padding: 0 20px 0 20px; /* Adds padding between left and right of each link */
+}
+
+header #branding{
+    float: left;
+}
+
+header #branding h1{
+    margin:0;
+
+}
+
+header nav{
+    float: right;
+    margin-top: 10px ;
+}
+
+header .highlight, header .current a{
+    color: #e8491d;
+    font-weight: bold;
+}
+
+header a:hover{
+color:#cccccc;
+font-weight: bold;
+}
+
+/*showcase start */
+#showcase{
+    min-height: 400px;
+    background:url('../img/showcase.jpg') no-repeat -800px -150px;
+    text-align: center;
+    color: black;
+}
+
+#showcase h1{
+    margin-top: 100px;
+    font-size: 55px;
+    margin-bottom: 10px;
 }
