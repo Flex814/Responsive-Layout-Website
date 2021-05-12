@@ -27,6 +27,14 @@ ul {
     color: #ffffff;
 }
 
+.dark {
+    padding: 15px;
+    background: #35424a;
+    color: #ffffff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 /* Header */
 header{
     background:#35424a ; /*Makes background of header greyish */
@@ -76,7 +84,8 @@ font-weight: bold;
 /*showcase start */
 #showcase{
     min-height: 400px;
-    background:url('../img/showcase.jpg') no-repeat -800px -150px;
+    background:url('../img/showcase.jpg') no-repeat ;
+    background-size: cover;
     text-align: center;
     color: black;
 }
@@ -133,6 +142,34 @@ font-weight: bold;
 #boxes .box img{
     width:90px;
 
+}
+
+/* Sidebar */
+aside#sidebar{
+    float: right;
+    width: 30%;
+    margin-top: 10px;
+}
+
+aside#sidebar .quote input, aside#sidebar .quote textarea{
+    width: 90%;
+    padding: 5px;
+}
+
+
+/* Main-col */
+article#main-col{
+    float: left;
+    width: 65%;
+}
+
+/* Services */
+ul#services li{
+list-style: none;
+padding: 20px;
+border: #cccccc solid 1px;
+margin-bottom: 5px;
+background: #e6e6e6;
 }
 
 /*footer */
